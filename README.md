@@ -22,7 +22,7 @@ Solution to product view component
 
 ### Links
 
-- Solution URL: [solution URl]
+- Solution URL: [https://www.frontendmentor.io/solutions/productpreviewcardcomponent-jt3pCDaCcQ]
 - Live Site URL:[https://thriving-croissant-dd9d48.netlify.app]
 
 ## My process

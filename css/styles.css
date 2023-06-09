@@ -103,3 +103,25 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* media querries */
+@media (min-width: 375px) and (max-width: 425px) {
+  section {
+    display: flex;
+    align-items: center;
+  }
+
+  #product-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+  }
+  #desktop-image {
+    display: none;
+  }
+  #mobile-image {
+    display: block;
+    width: 100%;
+  }
+}

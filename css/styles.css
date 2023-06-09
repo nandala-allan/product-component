@@ -49,22 +49,30 @@ section {
 }
 
 h1 {
-  font-family: monospace;
-  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 45px;
-  line-height: 42px;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: 32px;
+  width: 80%;
 }
 p {
+  font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
+  width: 85%;
 }
 #price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -77,6 +85,8 @@ p {
 }
 
 #old-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
@@ -95,6 +105,11 @@ button {
   color: hsl(0, 0%, 100%);
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 37%, 25%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -108,14 +123,18 @@ button {
 @media (min-width: 375px) and (max-width: 425px) {
   section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
   }
 
   #product-component {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 85%;
+    align-items: center;
+    width: 100%;
   }
   #desktop-image {
     display: none;
@@ -123,5 +142,26 @@ button {
   #mobile-image {
     display: block;
     width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #product-content {
+    gap: 15px;
+    padding: 20px 25px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 32px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+    width: 98%;
   }
 }
